@@ -1,0 +1,103 @@
+/* ZipCoeForm.css */
+body {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  display: inline-block;
+  background-color: #535558;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  padding: 48px;
+  margin: 0 auto;
+  margin-top: 24px;
+  transition: transform 0.5s ease;
+  transform-origin: top;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-input {
+  text-align: center;
+}
+
+.card-form .card-label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card-form .card-input {
+  font-size: 14px;
+  padding: 8px;
+  background-color: #434343;
+  border: 1px solid #444b56;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.card-form .card-input::placeholder {
+  color: #8c8c8c;
+}
+
+.card-form #card-button {
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.card-form #card-button:hover {
+  background-color: #0069d9;
+}
+
+.card-form #card-button {
+  /* ... other button styles ... */
+  position: relative;
+  overflow: hidden;
+}
+
+/* animation */
+
+.card-form #card-button .card-span {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.card-form #card-button .card-svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease;
+}
+
+.card-form #card-button.submit-success .card-span {
+  transform: translateY(-150%);
+}
+
+.card-form #card-button.submit-success .card-svg {
+  transform: translate(-50%, -50%) scale(1);
+}

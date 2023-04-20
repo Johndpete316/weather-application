@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './styles/App.css'
 import Counter from './components/counter'
-import WeatherCard from './components/WeatherApp'
+import ZipCodeForm from './components/ZipCodeForm'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           </a>
         </div>
       </header>
-      <WeatherCard />
+      <ZipCodeForm />
     </div>
   )
 }

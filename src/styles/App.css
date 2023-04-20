@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .logo {
@@ -43,7 +44,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite .01s linear;
   }
 }
 
@@ -53,4 +54,14 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-container {
+    position: static; /* Remove the fixed position on mobile */
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px; /* Add some margin at the bottom */
+  }
 }
